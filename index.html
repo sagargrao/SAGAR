@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arecanut Market Rates - Shivamogga</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #2b5d34;
+      margin-bottom: 10px;
+    }
+    .day-buttons {
+      margin: 20px 0;
+    }
+    .day-buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #023c0c;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .day-buttons button:hover {
+      background: #3f7a4c;
+    }
+    .day-buttons .active {
+      background: #1d4023;
+    }
+    .rates {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 12px;
+      background: rgb(228, 222, 222);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .rates table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .rates th, .rates td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    .rates th {
+      background: #2b5d34;
+      color: white;
+    }
+    footer {
+      margin-top: 30px;
+      color: #666;
+      font-size: 14px;
+    }
+    img.icon {
+      width: 30px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Arecanut Market Rates - Shivamogga</h1>
+  <p>Select a day to view rates:</p>
+
+  <div class="day-buttons">
+    <button onclick="showRates('sun')">Sunday</button>
+    <button onclick="showRates('mon')">Monday</button>
+    <button onclick="showRates('tue')">Tuesday</button>
+    <button onclick="showRates('wed')">Wednesday</button>
+    <button onclick="showRates('thu')">Thursday</button>
+    <button onclick="showRates('fri')">Friday</button>
+    <button onclick="showRates('sat')">Saturday</button>
+  </div>
+
+  <!-- Sunday -->
+  <div id="sun" class="rates">
+    <h3>Sunday Rates</h3>
+    <table>
+      <tr><th>Type</th><th>Low</th><th>Mid</th><th>High</th></tr>
+      <tr><td><img src="saraku.jpg" class="icon">Saraku</td><td>59300</td><td>68000</td><td>85299</td></tr>
+      <tr><td><img src="bette.jpg" class="icon">Bette</td><td>50099</td><td>58500</td><td>61599</td></tr>
+      <tr><td><img src="rashi.jpg" class="icon">Rashi</td><td>46669</td><td>57400</td><td>59501</td></tr>
+      <tr><td><img src="gorabal.jpg" class="icon">Gorabal</td><td>17672</td><td>32200</td><td>33561</td></tr>
+    </table>
+  </div>
+
+  <!-- Monday -->
+  <div id="mon" class="rates">
+    <h3>Monday Rates</h3>
+    <table>
+      <tr><th>Type</th><th>Low</th><th>Mid</th><th>High</th></tr>
+      <tr><td><img src="saraku.jpg" class="icon">Saraku</td><td>59300</td><td>68000</td><td>85299</td></tr>
+      <tr><td><img src="bette.jpg" class="icon">Bette</td><td>60159</td><td>85000</td><td>89896</td></tr>
+      <tr><td><img src="rashi.jpg" class="icon">Rashi</td><td>52009</td><td>63700</td><td>64269</td></tr>
+      <tr><td><img src="gorabal.jpg" class="icon">Gorabal</td><td>48568</td><td>59800</td><td>60599</td></tr>
+    </table>
+  </div>
+
+  <!-- Tuesday -->
+  <div id="tue" class="rates">
+    <h3>Tuesday Rates</h3>
+    <table>
+      <tr><th>Type</th><th>Low</th><th>Mid</th><th>High</th></tr>
+      <tr><td><img src="saraku.jpg" class="icon">Saraku</td><td>61209</td><td>84200</td><td>98100</td></tr>
+      <tr><td><img src="bette.jpg" class="icon">Bette</td><td>57240</td><td>62600</td><td>64599</td></tr>
+      <tr><td><img src="rashi.jpg" class="icon">Rashi</td><td>49599</td><td>60000</td><td>61509</td></tr>
+      <tr><td><img src="gorabal.jpg" class="icon">Gorabal</td><td>23111</td><td>33300</td><td>37501</td></tr>
+    </table>
+  </div>
+
+  <!-- Wednesday -->
+  <div id="wed" class="rates">
+    <h3>Wednesday Rates</h3>
+    <table>
+      <tr><th>Type</th><th>Low</th><th>Mid</th><th>High</th></tr>
+      <tr><td><img src="saraku.jpg" class="icon">Saraku</td><td>60159</td><td>85000</td><td>89896</td></tr>
+      <tr><td><img src="bette.jpg" class="icon">Bette</td><td>52009</td><td>63700</td><td>64269</td></tr>
+      <tr><td><img src="rashi.jpg" class="icon">Rashi</td><td>48568</td><td>59800</td><td>60799</td></tr>
+      <tr><td><img src="gorabal.jpg" class="icon">Gorabal</td><td>29469</td><td>33500</td><td>36139</td></tr>
+    </table>
+  </div>
+
+  <!-- Thursday -->
+  <div id="thu" class="rates">
+    <h3>Thursday Rates</h3>
+    <p>No data available</p>
+  </div>
+
+  <!-- Friday -->
+  <div id="fri" class="rates">
+    <h3>Friday Rates</h3>
+    <p>No data available</p>
+  </div>
+
+  <!-- Saturday -->
+  <div id="sat" class="rates">
+    <h3>Saturday Rates</h3>
+    <p>No data available</p>
+  </div>
+
+  <footer>📅 Data updated on 20-08-2025</footer>
+
+  <script>
+    function showRates(day) {
+      // Hide all
+      let sections = document.querySelectorAll('.rates');
+      sections.forEach(sec => sec.style.display = 'none');
+
+      // Show selected
+      document.getElementById(day).style.display = 'block';
+
+      // Button highlight
+      let buttons = document.querySelectorAll('.day-buttons button');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    // Auto show Sunday initially
+    showRates('sun');
+  </script>
+</body>
+</html>
