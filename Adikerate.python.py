@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox, simpledialog
 
+#Comment
 
 class AdikeKeniApp:
     # Define default placeholder texts as constants
